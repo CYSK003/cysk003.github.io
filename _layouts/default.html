@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    <div class="list-inline text-center" style="font-size:16px;padding:10px">富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善</div>
+    
+    {% include footer.html %}
+
+
+<!-- Image to hack wechat -->
+<img src="/img/about-cc-gentle.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
